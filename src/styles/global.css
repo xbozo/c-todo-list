@@ -1,0 +1,55 @@
+:root {
+    --blue_dark: #1E6F9F;
+    --blue: #4EA8DE;
+    
+    
+    --purple_dark: #5E60CE;
+    --purple: #8284FA;
+    
+    
+    --gray_100: #F2F2F2;
+    --gray_200: #D9D9D9;
+    --gray_300: #808080;
+    --gray_400: #333333;
+    --gray_500: #262626;
+    --gray_600: #1A1A1A;
+    --gray_700: #0D0D0D;
+    
+    
+    --red_100: #E25858;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;               /** Transforma 1rem em 10px */
+}
+
+body {
+    background-color: var(--gray_700);
+    color: var(--gray_100);
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+a { text-decoration: none; }
+
+button, a {
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+button:hover, a:hover {
+    filter: brightness(0.9)
+}
